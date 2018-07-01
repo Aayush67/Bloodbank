@@ -1,0 +1,216 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7CFC00"
+    tools:context=".Registration" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textSize="30sp"
+                android:text="Registration"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                 android:inputType="textPostalAddress" 
+                android:hint="Username" />
+
+           
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+         
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                 android:inputType="textPostalAddress" 
+                android:hint="Email"
+               />
+                  
+              <EditText
+                android:id="@+id/Phone"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:hint="Phone"
+               />
+              
+              <TextView 
+                  android:layout_height="match_parent"
+                  android:layout_width="wrap_content"
+                  android:layout_marginTop="40dp"
+                  android:layout_gravity="center_horizontal"
+                  android:text="Address"
+                  android:textSize="30sp"/>
+              	   <EditText
+                        android:id="@+id/locality"
+                         android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:ems="10"
+                        android:hint="Locality"
+                        android:inputType="textPostalAddress" >
+
+                        <requestFocus />
+                    </EditText>
+                    
+              	   	   <EditText
+                        android:id="@+id/City"
+                         android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:ems="10"
+                        android:hint="City"
+                        android:inputType="textPostalAddress" >
+
+                        <requestFocus />
+                    </EditText>
+                    
+              	   	   	   <EditText
+                        android:id="@+id/State"
+                         android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:ems="10"
+                        android:hint="State"
+                        android:inputType="textPostalAddress" >
+
+                        <requestFocus />
+                    </EditText>
+      
+            
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 >
+
+			<TextView 
+			    android:layout_height="wrap_content"
+			    android:layout_width="wrap_content"
+			    android:layout_marginTop="20dp"
+			    android:layout_marginLeft="60dp"
+			    android:text="Gender"
+			    android:textSize="20sp"/>
+		
+			
+                <RadioGroup
+                    android:id="@+id/Gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     >
+
+          
+
+                    <RadioButton
+                        android:id="@+id/Male"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Male"
+                        android:layout_marginLeft="170dp"
+                         />
+             
+
+                <RadioButton
+                    android:id="@+id/Female"
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:layout_marginLeft="170dp" />
+			   </RadioGroup>
+            </FrameLayout>
+            
+            <FrameLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                
+                   <TextView 
+			    android:layout_height="wrap_content"
+			    android:layout_width="wrap_content"
+			    android:layout_marginTop="50dp"
+			    android:layout_marginLeft="60dp"
+			    android:text="Blood Group:"
+			    android:textSize="20sp"/>
+                   
+                <Spinner
+                android:id="@+id/Bloodgroup"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="200dp"/>
+                   
+                   
+            </FrameLayout>
+            
+        	 <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="		I want to be donor" />
+            
+            <Button 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/Register"
+                android:text="Register"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"/>
+            
+            
+            
+            <TextView
+                android:layout_height="50dp"
+                android:layout_width="match_parent"/>
+         
+          
+              </LinearLayout>
+   </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BloodBank</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="title_activity_forgotpwd">Forgotpwd</string>
+    <string name="title_activity_message">Message</string>
+    <string name="title_activity_phonefourdigit">Phonefourdigit</string>
+    <string name="title_activity_homepage">Homepage</string>
+    <string name="title_activity_searchdonor">Searchdonor</string>
+    <string name="title_activity_bloodbank">Bloodbank</string>
+    <string name="title_activity_mydetails">Mydetails</string>
+    <string name="title_activity_update">Update</string>
+    <string name="title_activity_edit">Edit</string>
+    <string name="title_activity_updating_text">UpdatingText</string>
+
+</resources>

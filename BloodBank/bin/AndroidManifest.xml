@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bloodbank"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconn"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.bloodbank.Splashscreen"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.bloodbank.Login"
+            android:label="Sign in" >
+        </activity>
+        <activity
+            android:name="com.example.bloodbank.Registration"
+            android:label="Registration"
+            android:parentActivityName=".Login" >
+        </activity>
+        <activity
+            android:name="com.example.bloodbank.Forgotpwd"
+            android:label="Reset Password"
+            android:parentActivityName=".Phonefourdigit" >
+        </activity>
+        <activity
+            android:name="com.example.bloodbank.Phonefourdigit"
+            android:label="Verification"
+            android:parentActivityName=".Login" >
+        </activity>
+        <activity
+            android:name="com.example.bloodbank.Homepage"
+            android:label="@string/title_activity_homepage" >
+        </activity>
+        <activity
+            android:name="com.example.bloodbank.Searchdonor"
+            android:label="@string/title_activity_searchdonor" >
+        </activity>
+        <activity
+            android:name="com.example.bloodbank.Bloodbank"
+            android:label="@string/title_activity_bloodbank" >
+        </activity>
+        <activity
+            android:name="com.example.bloodbank.Mydetails"
+            android:label="@string/title_activity_mydetails" >
+        </activity>
+        <activity
+            android:name="com.example.bloodbank.Update"
+            android:label="@string/title_activity_update" >
+        </activity>
+        <activity
+            android:name="com.example.bloodbank.Edit"
+            android:label="@string/title_activity_edit" >
+        </activity>
+        <activity
+            android:name="com.example.bloodbank.UpdatingText"
+            android:label="@string/title_activity_updating_text" >
+        </activity>
+    </application>
+
+</manifest>

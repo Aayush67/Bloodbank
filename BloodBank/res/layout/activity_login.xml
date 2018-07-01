@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#7CFC00" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Login"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/Phone_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:hint="Phone No"
+         android:inputType="textPostalAddress" 
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Phone_no"
+        android:layout_below="@+id/Phone_no"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Password"
+        android:layout_below="@+id/Login"
+        android:layout_marginTop="22dp"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:text="New User? create new account" />
+
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Login"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="18dp"
+        android:text="Sign up here" 
+        android:textStyle="italic"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:onClick="registration"/>
+
+	<TextView 
+	    android:id="@+id/forgetpwd"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:layout_below="@+id/Register"
+	    android:text="Forgot Password"
+	    android:layout_marginLeft="130dp"
+	    android:layout_marginTop="20dp"
+	    android:textSize="16sp"
+	    android:clickable="true"
+	    android:onClick="Forgot"
+	    />       
+        
+
+</RelativeLayout>
